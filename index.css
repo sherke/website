@@ -1,0 +1,730 @@
+body{
+    width: 100vw;
+    height: 100vh;
+
+    /* background-color: red; */
+
+    margin: 0px;
+    padding: 0px;
+}
+
+.screen{
+    width: 100vw;
+    height: 100vh;
+
+    background-color: blue;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.screen .menubar{
+    width: 300px;
+    height: 100vh;
+
+    background-color: mediumslateblue;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.screen .viewscreen{
+    width: calc(100vw - 300px);
+    height: 100vh;
+
+    background-color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.screen .menubar .myname{
+    width: 100%;
+    height: auto;
+
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.screen .menubar .photosection{
+    width: 170px;
+    height: 210px;
+    /* border-radius: 15px; */
+
+    /* background-color: aqua; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.screen .menubar .menuitems{
+    width: calc(100% - 10px);
+    height: calc(90% - 280px);
+    
+    /* background-color: brown; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.screen .menubar .photosection img{
+    /* width: 100%; */
+    height: 100%;
+}
+
+.screen .menubar .menuitems .menuoption{
+    width: 90%;
+    height: 33px;
+    border: 2px solid transparent;
+    /* border-radius: 8px; */
+
+    /* background-color: white; */
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    font-size: 20px;
+    font-weight: bold;
+    /* color: rgb(75, 75, 75); */
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+    padding-left: 10px;
+
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.screen .menubar .menuitems .menuoptionclick{
+    border: 2px solid white;
+    background-color: white;
+    color: mediumslateblue;
+}
+
+.screen .menubar .menuitems .menuoption:hover{
+    border: 2px solid white;
+    background-color: mediumslateblue;
+    color: white;
+}
+
+
+.screen .viewscreen .viewscreenitem{
+    width: 95%;
+    height: 95%;
+
+    border: 1px solid red;
+}
+
+
+/* -------------- Introduction*/
+#viewscreenitem0{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    border: 3px solid mediumslateblue;
+    box-sizing: border-box;
+}
+
+#viewscreenitem0 .introductionheading{
+    width: 100%;
+    height: 40px;
+
+    background-color: mediumslateblue;
+    border-bottom: 2px solid white;
+
+    font-size: 22px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+
+#viewscreenitem0 .introductionsection{
+    width: 100%;
+    height: calc(100% - 40px);
+    box-sizing: border-box;
+
+    /* background-color: red; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    overflow-y: auto;
+}
+
+/* -------------- Experience*/
+#viewscreenitem1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    border: 3px solid mediumslateblue;
+    box-sizing: border-box;
+}
+
+#viewscreenitem1 .experienceheading{
+    width: 100%;
+    height: 40px;
+
+    background-color: mediumslateblue;
+    border-bottom: 2px solid white;
+
+    font-size: 22px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+
+#viewscreenitem1 .experiencesection{
+    width: 100%;
+    height: calc(100% - 40px);
+    box-sizing: border-box;
+
+    /* background-color: red; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    overflow-y: auto;
+}
+
+/* -------------- Education*/
+#viewscreenitem2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    border: 3px solid mediumslateblue;
+    box-sizing: border-box;
+}
+
+#viewscreenitem2 .educationheading{
+    width: 100%;
+    height: 40px;
+
+    background-color: mediumslateblue;
+    border-bottom: 2px solid white;
+
+    font-size: 22px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+
+#viewscreenitem2 .educationsection{
+    width: 100%;
+    height: calc(100% - 40px);
+    box-sizing: border-box;
+
+    /* background-color: red; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    overflow-y: auto;
+}
+
+
+
+/* -------------- Projects*/
+#viewscreenitem3{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    border: 3px solid mediumslateblue;
+    box-sizing: border-box;
+}
+
+#viewscreenitem3 .projectsheading{
+    width: 100%;
+    height: 40px;
+
+    background-color: mediumslateblue;
+    border-bottom: 2px solid white;
+
+    font-size: 22px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+
+#viewscreenitem3 .projectssection{
+    width: 100%;
+    height: calc(100% - 40px);
+    box-sizing: border-box;
+
+    /* background-color: red; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    overflow-y: auto;
+}
+
+
+
+/* ------ Skills */
+#viewscreenitem4{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    border: 3px solid mediumslateblue;
+    box-sizing: border-box;
+}
+
+#viewscreenitem4 .skillheading{
+    width: 100%;
+    height: 40px;
+
+    background-color: mediumslateblue;
+    border-bottom: 2px solid white;
+
+    font-size: 22px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+
+#viewscreenitem4 .skillsectionbox{
+    width: 100%;
+    height: calc(100% - 40px);
+    box-sizing: border-box;
+
+    /* background-color: red; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    overflow-y: auto;
+}
+
+#viewscreenitem4 .skillsection{
+    width: 90%;
+    height: auto;
+
+    /* background-color: blue; */
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+    box-sizing: border-box;
+    border: 3px solid mediumslateblue;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#viewscreenitem4 .skillsection .skilltitle{
+    width: 100%;
+    height: 40px;
+
+    background-color: mediumslateblue;
+
+    font-size: 22px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+
+#viewscreenitem4 .skillsection .skillbox{
+    width: 100%;
+    height: 200px;
+
+    /* background-color: blueviolet; */
+}
+
+
+
+
+
+
+
+/* ------------ Certifications */
+
+#viewscreenitem5{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    border: 3px solid mediumslateblue;
+    box-sizing: border-box;
+    
+}
+
+#viewscreenitem5 .certificationheading{
+    width: 100%;
+    height: 40px;
+
+    background-color: mediumslateblue;
+    border-bottom: 2px solid white;
+
+    font-size: 22px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+#viewscreenitem5 .certificationsection{
+    width: 100%;
+    height: calc(100% - 40px);
+    box-sizing: border-box;
+
+    /* background-color: red; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    overflow-y: auto;
+}
+
+#viewscreenitem5 .certificationsection .certificationbox{
+    width: 400px;
+    height: 300px;
+
+    margin: 40px 40px;
+
+    background-color: mediumslateblue;
+}
+
+
+/* -------------- Awards*/
+#viewscreenitem6{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    border: 3px solid mediumslateblue;
+    box-sizing: border-box;
+}
+
+#viewscreenitem6 .awardsheading{
+    width: 100%;
+    height: 40px;
+
+    background-color: mediumslateblue;
+    border-bottom: 2px solid white;
+
+    font-size: 22px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+
+#viewscreenitem6 .awardssection{
+    width: 100%;
+    height: calc(100% - 40px);
+    box-sizing: border-box;
+
+    /* background-color: red; */
+
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; */
+    /* flex-wrap: wrap; */
+
+    overflow-y: auto;
+}
+
+#viewscreenitem6 .awardssection .awardbox{
+    width: 90%;
+    height: 300px;
+
+    background-color: mediumslateblue;
+
+    margin: 40px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#viewscreenitem6 .awardssection .awardbox .awardboxleft{
+    width: 400px;
+    height: 300px;
+    /* background-color: lightcoral; */
+    box-sizing: border-box;
+
+    padding: 15px;
+}
+
+#viewscreenitem6 .awardssection .awardbox .awardboxleft .awardboxleftpic{
+    width: 100%;
+    height: 100%;
+
+    background-color: white;
+
+    cursor: pointer;
+}
+
+#viewscreenitem6 .awardssection .awardbox .awardboxright{
+    width: calc(100% - 400px);
+    height: 300px;
+    background-color: mediumslateblue;
+
+    box-sizing: border-box;
+    padding: 20px;
+
+    font-size: 19px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* font-weight: bold; */
+    color: white;
+    /* word-spacing: 6px; */
+}
+
+#viewscreenitem6 .awardssection .awardbox .awardboxright h1{
+
+}
+
+#viewscreenitem6 .awardssection .awardbox .awardboxright p{
+
+}
+
+/* -------------- Hobbies & Interests*/
+#viewscreenitem7{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    border: 3px solid mediumslateblue;
+    box-sizing: border-box;
+}
+
+#viewscreenitem7 .hobbiesheading{
+    width: 100%;
+    height: 40px;
+
+    background-color: mediumslateblue;
+    border-bottom: 2px solid white;
+
+    font-size: 22px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+
+#viewscreenitem7 .hobbiessection{
+    width: 100%;
+    height: calc(100% - 40px);
+    box-sizing: border-box;
+
+    /* background-color: red; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    overflow-y: auto;
+}
+
+
+#viewscreenitem7 .hobbiessection .hobbybox{
+    width: 300px;
+    height: 300px;
+
+    background-color: mediumslateblue;
+
+    margin: 20px;
+}
+
+/* -------- Contact Me*/
+
+#viewscreenitem8{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: white;
+    border: none;
+}
+
+#viewscreenitem8 .contactinfolinks{
+    width: 45%;
+    height: 95%;
+
+    background-color: mediumslateblue;
+}
+
+#viewscreenitem8 .contactinfomail{
+    width: 45%;
+    height: 95%;
+
+    background-color: mediumslateblue;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#viewscreenitem8 .contactinfomail .contactinfomailtitle{
+    width: 90%;
+    height: 50px;
+    /* background-color: blue; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 35px;
+    color: white;
+}
+
+#viewscreenitem8 .contactinfomail .contactinfoinputs{
+    width: 95%;
+    height: calc(90% - 50px);
+
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#viewscreenitem8 .contactinfomail .contactinfoinputs #quickmailname{
+    width: 95%;
+    height: 40px;
+
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+    box-sizing: border-box;
+    padding-left: 5px;
+}
+
+#viewscreenitem8 .contactinfomail .contactinfoinputs #quickmailid{
+    width: 95%;
+    height: 40px;
+
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+    box-sizing: border-box;
+    padding-left: 5px;
+}
+
+#viewscreenitem8 .contactinfomail .contactinfoinputs #quickmailbody{
+    width: 95%;
+    height: 300px;
+
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+    box-sizing: border-box;
+    padding-left: 5px;
+    
+}
+
+#viewscreenitem8 .contactinfomail .contactinfoinputs #quickmailsubmit{
+    width: 150px;
+    height: 40px;
+
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+}
+
